@@ -68,7 +68,7 @@ function Product() {
           <div className="flex flex-col gap-4 my-8">
               <p className="">Select Size</p>
               <div className="flex gap-2">
-                {productData.sizes.map((item, index) => (
+                {productData.size.map((item, index) => (
                   <button key={index} className={`py-2 px-4 bg-gray-100 cursor-pointer ${item === size ? 'border border-orange-500' : ''}`} onClick={() => setSize(item)}>{item}</button>
                 ))}
               </div>
